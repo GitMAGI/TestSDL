@@ -8,7 +8,7 @@ TARGET = testSDL.exe
 MKDIR_P_BUILD = if not exist "$(BUILD_DIR)" mkdir $(BUILD_DIR)
 
 CINCLUDE = -I.\$(SRC_DIR)\ -I\msys64\mingw64\include
-CLIBS = -L\msys64\mingw64\lib -lws2_32 -lmingw32
+CLIBS = -L\msys64\mingw64\lib -lws2_32 -lmingw32 -lSDL2
 
 SOURCES = $(wildcard $(SRC_DIR)/*.c)
 

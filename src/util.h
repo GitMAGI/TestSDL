@@ -3,6 +3,7 @@
 
 #include <stdarg.h>
 #include <time.h>
+#include <stdbool.h>
 
 char* ssprintf(char* format, ...);
 char* sstrcat(char* first, char* second);

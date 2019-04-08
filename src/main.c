@@ -13,6 +13,8 @@
 #include "log.h"
 #include "util.h"
 
+#include "SDLTread01.h"
+
 int main(int argc, char* argv[]){
     struct timeval st, et;
     setbuf(stdout, NULL);
@@ -21,7 +23,7 @@ int main(int argc, char* argv[]){
     getTick(&st);
     infoLog("Starting", "");
   
-
+    SDLThread01();
 
     getTick(&et);
     infoLog("Completed. ETA %s", getETA(st, et));
